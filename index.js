@@ -38,7 +38,7 @@ if (type === 'equal'){                                                    // 36-
    const operator = calculator.dataset.operator                           // operator
    const secondNumber = resultValue                                       // drugi broj
    
-   result.textContent = calculate(firstNumber, operator, secondNumber)    //linija koja pozijva funkciju 'calculate' 
+   result.textContent = calculate(firstNumber, operator, secondNumber)    //linija koja poziva funkciju 'calculate' 
 }
 
 
@@ -62,12 +62,11 @@ function calculate (firstNumber, operator, secondNumber) {                   // 
     secondNumber = parseFloat(secondNumber)
    let resultOutput = '';
    if(operator === 'plus') resultOutput = firstNumber + secondNumber
-   if(operator === 'minus') resultOutput = firstNumber - secondNumber
+   if(operator === 'minus') resultOutput = firstNumber - secondNumber        //funkcije koje su tu upisane,izvrsavaju se  
    if(operator === 'times') resultOutput = firstNumber * secondNumber
    if(operator === 'divide') resultOutput = firstNumber / secondNumber
    if(operator === 'module') resultOutput = firstNumber % secondNumber
 
-
-return resultOutput
+return resultOutput    //izbacuje rezultat
 }
 
